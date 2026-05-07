@@ -374,6 +374,7 @@ body {
   color: var(--color-primario-oscuro);
 }
 
+
 .card_sabado {
   background-color: #cfdcce91;
 }
@@ -386,6 +387,7 @@ body {
 .card_sabado .artistas_lista {
   color: var(--color-terciario);
 }
+
 
 .card_domingo {
   background-color: #ffe2d077;
