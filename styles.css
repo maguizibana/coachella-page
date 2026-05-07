@@ -11,7 +11,7 @@
   --color-primario: #9E421D;
   --color-primario-oscuro: #6A2D00;
   --color-naranja: #FF8C42;
-  --color-terciario: #0E6D39;
+  --color-verde: #0E6D39;
   --color-detalles: #FFDBCF;
 }
 
@@ -379,13 +379,13 @@ body {
   background-color: #cfdcce91;
 }
 .card_sabado .artistas_dia {
-  background-color: var(--color-terciario);
+  background-color: var(--color-verde);
 }
 .card_sabado .artistas_headliner {
-  color: var(--color-terciario);
+  color: var(--color-verde);
 }
 .card_sabado .artistas_lista {
-  color: var(--color-terciario);
+  color: var(--color-verde);
 }
 
 
