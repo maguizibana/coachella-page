@@ -362,7 +362,7 @@ body {
 }
 
 .card_viernes {
-  background-color: #E1CFC3;
+  background-color: #e1cfc3a6;
 }
 .card_viernes .artistas_dia {
   background-color: var(--color-primario-oscuro);
@@ -370,9 +370,12 @@ body {
 .card_viernes .artistas_headliner {
   color: var(--color-primario-oscuro);
 }
+.card_viernes .artistas_lista {
+  color: var(--color-primario-oscuro);
+}
 
 .card_sabado {
-  background-color: #CFDCCE;
+  background-color: #cfdcce91;
 }
 .card_sabado .artistas_dia {
   background-color: var(--color-terciario);
@@ -380,14 +383,20 @@ body {
 .card_sabado .artistas_headliner {
   color: var(--color-terciario);
 }
+.card_sabado .artistas_lista {
+  color: var(--color-terciario);
+}
 
 .card_domingo {
-  background-color: #FFE2D0;
+  background-color: #ffe2d077;
 }
 .card_domingo .artistas_dia {
   background-color: var(--color-naranja);
 }
 .card_domingo .artistas_headliner {
+  color: var(--color-naranja);
+}
+.card_domingo .artistas_lista {
   color: var(--color-naranja);
 }
 
