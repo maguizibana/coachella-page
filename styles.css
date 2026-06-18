@@ -40,6 +40,10 @@ body {
   backdrop-filter: blur(8px);
 }
 
+.navbar_logo {
+  flex: 1;
+}
+
 .navbar_logo img {
   height: 32px;
   width: auto;
@@ -51,6 +55,8 @@ body {
   gap: 36px;
   list-style: none;
   text-transform: uppercase;
+  flex: 2;
+  justify-content: center;
 }
 
 .navbar_links a {
@@ -67,6 +73,14 @@ body {
 }
 
 .navbar_cta {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  padding: 0;
+}
+
+.navbar_cta_boton {
   background-color: var(--color-naranja);
   padding: 12px 24px;
   border-radius: 80px;
@@ -83,22 +97,6 @@ body {
 .menu_toggle {
   display: none;
 }
-
-.navbar_hamburguesa {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.navbar_hamburguesa span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background-color: var(--color-naranja);
-  border-radius: 2px;
-}
-
 
 
 /**************HERO**************/
