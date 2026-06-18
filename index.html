@@ -9,28 +9,57 @@
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="aos.css">
 </head>
+
+<script src="aos.js"></script>
+<script>
+  window.addEventListener('load', function() {
+    AOS.init({
+      duration: 600,
+      once: true,
+      offset: 100
+    });
+  });
+</script>
 
 <body>
 
   <!-------NAVBAR------->
-  <nav class="navbar">
-    <a href="#inicio" class="navbar_logo">
-      <img src="img/logo.svg" alt="Logo Coachella" />
-    </a>
-    <ul class="navbar_links">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#sobre">El Festival</a></li>
-      <li><a href="#transporte">Transporte</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-    <a href="#contacto" class="navbar_cta">Contacto</a>
-  </nav>
+<nav class="navbar">
+  <a href="#inicio" class="navbar_logo">
+    <img src="img/logo.svg" alt="Logo Coachella" />
+  </a>
+
+  <input type="checkbox" id="menu_toggle" class="menu_toggle" />
+
+  <label for="menu_toggle" class="navbar_hamburguesa">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <ul class="navbar_links">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#sobre">El Festival</a></li>
+    <li><a href="#entradas">Entradas</a></li>
+    <li><a href="#transporte">Transporte</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="tienda.html">Tienda</a></li>
+
+  </ul>
+
+  <a href="tienda.html" class="navbar_cta">
+    <img src="img/icono-carrito.svg" alt="Carrito" />
+  </a>
+
+</nav>
+
 
   <!-------HERO------->
   <section class="hero" id="inicio">
-    <div class="hero_contenido">
+    <div class="hero_contenido" data-aos="fade-up">
       <span class="hero_locacion">Indio, California</span>
       <h1 class="hero_titulo">Coachella</h1>
       <p class="hero_datos">10–12 y 17–19 de abril, 2026</p>
@@ -42,7 +71,7 @@
   <section class="sobre" id="sobre">
     <div class="sobre_container">
 
-      <div class="sobre_header">
+      <div class="sobre_header" data-aos="fade-up">
         <div class="sobre_header_izquierda">
         <span class="antetitulos">Sobre el evento</span>
          <h2 class="titulos">Coachella 2026</h2>
@@ -52,7 +81,7 @@
 
     <div class="sobre_cards">
 
-      <div class="sobre_card card_angosta" style="background-image: url('img/musica.jpg')">
+      <div  class="sobre_card card_angosta" data-aos="fade-up" style="background-image: url('img/musica.jpg')">
         <div class="sobre_card_contenido">
           <div class="sobre_card_header">
             <img src="img/icono-musica.svg" alt="Música" class="sobre_card_icono" />
@@ -62,7 +91,7 @@
         </div>
       </div>
 
-      <div class="sobre_card card_ancha" style="background-image: url('img/camping.jpg')">
+      <div class="sobre_card card_ancha" data-aos="fade-up" style="background-image: url('img/camping.jpg')">
         <div class="sobre_card_contenido">
           <div class="sobre_card_header">
             <img src="img/icono-camping.svg" alt="Camping" class="sobre_card_icono" />
@@ -72,7 +101,7 @@
         </div>
       </div>
 
-      <div class="sobre_card card_ancha" style="background-image: url('img/gastronomia.jpg')">
+      <div class="sobre_card card_ancha" data-aos="fade-up" style="background-image: url('img/gastronomia.jpg')">
         <div class="sobre_card_contenido">
           <div class="sobre_card_header">
             <img src="img/icono-gastronomia.svg" alt="Gastronomía" class="sobre_card_icono" />
@@ -82,7 +111,7 @@
         </div>
       </div> 
 
-      <div class="sobre_card card_angosta" style="background-image: url('img/arte.jpg')">
+      <div class="sobre_card card_angosta" data-aos="fade-up" style="background-image: url('img/arte.jpg')">
         <div class="sobre_card_contenido">
           <div class="sobre_card_header">
             <img src="img/icono-arte.svg" alt="Arte" class="sobre_card_icono" />
@@ -102,14 +131,14 @@
 <section class="artistas" id="artistas">
   <div class="artistas_container">
 
-    <div class="artistas_header">
+    <div class="artistas_header" data-aos="fade-up">
       <span class="antetitulos">Line up</span>
       <h2 class="titulos">Artistas</h2>
     </div>
 
     <div class="artistas_cards">
 
-      <div class="artistas_card card_viernes">
+      <div class="artistas_card card_viernes" data-aos="fade-up">
         <div class="artistas_card_header">
           <h3 class="artistas_headliner">Sabrina Carpenter</h3>
           <span class="artistas_dia">Viernes 10 y 17</span>
@@ -125,7 +154,7 @@
 
       </div>
 
-      <div class="artistas_card card_sabado">
+      <div class="artistas_card card_sabado" data-aos="fade-up">
         <div class="artistas_card_header">
           <h3 class="artistas_headliner">Justin Bieber</h3>
           <span class="artistas_dia">Sábado 11 y 18</span>
@@ -140,7 +169,7 @@
 
       </div>
 
-      <div class="artistas_card card_domingo">
+      <div class="artistas_card card_domingo" data-aos="fade-up">
         <div class="artistas_card_header">
           <h3 class="artistas_headliner">Karol G</h3>
           <span class="artistas_dia">Domingo 12 y 19</span>
@@ -160,16 +189,56 @@
 </section>
 
 
+<!-------ENTRADAS------->
+<section class="entradas" id="entradas">
+  <div class="entradas_container">
+
+    <div class="entradas_header" data-aos="fade-up">
+      <span class="antetitulos">Passes 2026</span>
+      <h2 class="titulos titulos_entradas">Entradas 2026</h2>
+   </div>
+
+    <div class="entradas_cards" data-aos="fade-up">
+
+      <div class="entradas_card" style="background-image: url('img/entradas-pases.jpg')">
+        <div class="entradas_card_contenido">
+          <h3 class="entradas_card_titulo">Pases</h3>
+          <p class="entradas_card_texto">Elegí el pase que mejor se adapte a tu experiencia. Desde acceso general hasta opciones VIP con áreas exclusivas.</p>
+          <a href="tienda.html" class="entradas_card_cta card_pases">Ver opciones</a>
+        </div>
+      </div>
+
+      <div class="entradas_card" style="background-image: url('img/entradas-transporte.jpg')">
+        <div class="entradas_card_contenido">
+          <h3 class="entradas_card_titulo">Transporte</h3>
+          <p class="entradas_card_texto">Shuttle oficial, parking preferencial y zonas de rideshare dentro del predio. Llegá sin preocupaciones. </p>
+          <a href="tienda.html" class="entradas_card_cta card_transporte">Ver opciones</a>
+        </div>
+      </div>
+
+      <div class="entradas_card" style="background-image: url('img/entradas-estadia.jpg')">
+        <div class="entradas_card_contenido">
+          <h3 class="entradas_card_titulo">Estadía</h3>
+          <p class="entradas_card_texto">Quedate en el predio y viví el festival de principio a fin. Desde camping clásico hasta glamping de lujo.</p>
+        <a href="tienda.html" class="entradas_card_cta card_estadia">Ver opciones</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <!--------TRANSPORTE---------->
 <section class="transporte" id="transporte">
   <div class="transporte_container">
 
-    <div class="transporte_header">
+    <div class="transporte_header" data-aos="fade-up">
       <span class="antetitulos">Transporte</span>
       <h2 class="titulos">Cómo llegar</h2>
     </div>
 
-    <div class="transporte_contenido">
+    <div class="transporte_contenido" data-aos="fade-up">
 
       <div class="transporte_opciones">
 
@@ -227,14 +296,14 @@
 <section class="faq" id="faq">
   <div class="faq_container">
 
-    <div class="faq_header">
+    <div class="faq_header" data-aos="fade-up">
       <span class="antetitulos">¿Tenés dudas?</span>
       <h2 class="titulos">Preguntas frecuentes</h2>
     </div>
 
     <div class="faq_lista">
 
-      <details class="faq_item">
+      <details class="faq_item" data-aos="fade-up">
         <summary class="faq_pregunta">
           ¿Tiene límite de edad?
         <img src="img/icono-faq.svg" alt="Icono FAQ" class="faq_icono">        </summary>
@@ -243,7 +312,7 @@
         </p>
       </details>
 
-      <details class="faq_item">
+      <details class="faq_item" data-aos="fade-up">
         <summary class="faq_pregunta">
           ¿Se puede acampar?
         <img src="img/icono-faq.svg" alt="Icono FAQ" class="faq_icono">        </summary>
@@ -252,7 +321,7 @@
         </p>
       </details>
 
-      <details class="faq_item">
+      <details class="faq_item" data-aos="fade-up">
         <summary class="faq_pregunta">
           ¿Hay transmisión online?
         <img src="img/icono-faq.svg" alt="Icono FAQ" class="faq_icono">        </summary>
@@ -261,7 +330,7 @@
         </p>
       </details>
 
-      <details class="faq_item">
+      <details class="faq_item" data-aos="fade-up">
         <summary class="faq_pregunta">
           ¿Hay estacionamiento?
         <img src="img/icono-faq.svg" alt="Icono FAQ" class="faq_icono">        </summary>
@@ -275,7 +344,7 @@
 </section>
 
 <!--------CONTACTO---------->
-<section class="contacto" id="contacto">
+<section class="contacto" id="contacto" data-aos="fade-up">
   <div class="contacto_container">
 
     <div class="contacto_info">

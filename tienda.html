@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda — Coachella</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="tienda.css" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="aos.css">
+</head>
+
+<script src="aos.js"></script>
+<script>
+  window.addEventListener('load', function() {
+    AOS.init({
+      duration: 600,
+      once: true,
+      offset: 100
+    });
+  });
+</script>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar_logo">
+      <img src="img/logo.svg" alt="Logo Coachella" />
+    </a>
+    <input type="checkbox" id="menu_toggle" class="menu_toggle" />
+    <label for="menu_toggle" class="navbar_hamburguesa">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul class="navbar_links">
+      <li><a href="index.html#inicio">Inicio</a></li>
+      <li><a href="index.html#sobre">El Festival</a></li>
+      <li><a href="index.html#entradas">Entradas</a></li>
+      <li><a href="index.html#transporte">Transporte</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+    <a href="carrito.html" class="navbar_cta">
+      <img src="img/icono-carrito.svg" alt="Carrito" />
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="tienda_hero">
+    <div class="tienda_hero_contenido">
+      <h1 class="tienda_hero_titulo" data-aos="fade-up" >Tienda</h1>
+    </div>
+  </section>
+
+  <!-- TABS Y PRODUCTOS -->
+  <section class="tienda_productos">
+    <div class="tienda_container">
+
+      <!-- RADIO BUTTONS OCULTOS -->
+      <input type="radio" name="tab" id="tab_pases" class="tab_input" checked />
+      <input type="radio" name="tab" id="tab_transporte" class="tab_input" />
+      <input type="radio" name="tab" id="tab_estadia" class="tab_input" />
+
+      <!-- TABS -->
+      <div class="tienda_tabs" data-aos="fade-up">
+        <label for="tab_pases" class="tienda_tab">Pases</label>
+        <label for="tab_transporte" class="tienda_tab">Transporte</label>
+        <label for="tab_estadia" class="tienda_tab">Estadía</label>
+      </div>
+
+      <!-- CONTENIDO PASES -->
+      <div class="tab_contenido" id="contenido_pases">
+        <div class="tienda_cards" data-aos="fade-up">
+
+          <div class="tienda_card">
+            <div class="tienda_card_img">
+              <img src="img/pase-ga.jpg" alt="Admisión general" />
+            </div>
+            <div class="tienda_card_info">
+              <h3 class="tienda_card_titulo">Admisión general</h3>
+              <p class="tienda_card_texto">Permite la entrada al recinto los tres días. Los titulares del pase GA pueden visitar las áreas de acampada de GA.</p>
+              <a href="detalle.html" class="tienda_card_cta tienda_cta_pases">Ver detalles</a>
+            </div>
+          </div>
+
+          <div class="tienda_card">
+            <div class="tienda_card_img">
+              <img src="img/pase-shuttle.jpg" alt="GA + Shuttle" />
+            </div>
+            <div class="tienda_card_info">
+              <h3 class="tienda_card_titulo">GA + Shuttle</h3>
+              <p class="tienda_card_texto">Permite la entrada al lugar e incluye Coachella Shuttle Pass. Los titulares pueden visitar áreas de acampada de GA.</p>
+              <a href="detalle.html" class="tienda_card_cta tienda_cta_pases">Ver detalles</a>
+            </div>
+          </div>
+
+          <div class="tienda_card">
+            <div class="tienda_card_img">
+              <img src="img/pase-vip.jpg" alt="Pases VIP" />
+            </div>
+            <div class="tienda_card_info">
+              <h3 class="tienda_card_titulo">Pases VIP</h3>
+              <p class="tienda_card_texto">Permite la entrada al lugar y a las zonas VIP durante todo el fin de semana. Pueden visitar áreas de acampada de GA.</p>
+              <a href="detalle.html" class="tienda_card_cta tienda_cta_pases">Ver detalles</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CONTENIDO TRANSPORTE -->
+      <div class="tab_contenido" id="contenido_transporte">
+        <div class="tienda_cards" data-aos="fade-up">
+
+          <div class="tienda_card">
+            <div class="tienda_card_img">
+              <img src="img/shuttle.jpg" alt="Coachella Shuttle" />
+            </div>
+            <div class="tienda_card_info">
+              <h3 class="tienda_card_titulo">Coachella Shuttle</h3>
+              <p class="tienda_card_texto">Omita el viaje y la molestia del estacionamiento. Viaja hacia/desde el festival con comodidad y facilidad.</p>
+              <a href="detalle.html" class="tienda_card_cta tienda_cta_transporte">Ver detalles</a>
+            </div>
+          </div>
+
+          <div class="tienda_card">
+            <div class="tienda_card_img">
+              <img src="img/camping-parking.jpg" alt="Camping Companion Parking" />
+            </div>
+            <div class="tienda_card_info">
+              <h3 class="tienda_card_titulo">Camping Companion Parking</h3>
+              <p class="tienda_card_texto">Aparcamiento adicional de fin de semana para campistas.</p>
+              <a href="detalle.html" class="tienda_card_cta tienda_cta_transporte">Ver detalles</a>
+            </div>
+          </div>
+
+          <div class="tienda_card">
+            <div class="tienda_card_img">
+              <img src="img/preferred-parking.jpg" alt="Preferred Parking" />
+            </div>
+            <div class="tienda_card_info">
+              <h3 class="tienda_card_titulo">Preferred Parking</h3>
+              <p class="tienda_card_texto">Estacione y entre en el lugar a través de la entrada norte. Bueno para todo el fin de semana.</p>
+              <a href="detalle.html" class="tienda_card_cta tienda_cta_transporte">Ver detalles</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CONTENIDO ESTADÍA -->
+      <div class="tab_contenido" id="contenido_estadia">
+        <div class="tienda_cards" data-aos="fade-up">
+
+          <div class="tienda_card">
+            <div class="tienda_card_img">
+              <img src="img/camping-front.jpg" alt="Preferred Front Row Car Camping" />
+            </div>
+            <div class="tienda_card_info">
+              <h3 class="tienda_card_titulo">Preferred Front Row Car Camping</h3>
+              <p class="tienda_card_texto">La mejor ubicación de camping con acceso directo al festival.</p>
+              <a href="detalle.html" class="tienda_card_cta tienda_cta_estadia">Ver detalles</a>
+            </div>
+          </div>
+
+          <div class="tienda_card">
+            <div class="tienda_card_img">
+              <img src="img/powered-camping.jpg" alt="Powered Car Camping" />
+            </div>
+            <div class="tienda_card_info">
+              <h3 class="tienda_card_titulo">Powered Car Camping</h3>
+              <p class="tienda_card_texto">Camping con electricidad disponible para tu comodidad.</p>
+              <a href="detalle.html" class="tienda_card_cta tienda_cta_estadia">Ver detalles</a>
+            </div>
+          </div>
+
+          <div class="tienda_card">
+            <div class="tienda_card_img">
+              <img src="img/la-campana.jpg" alt="La Campana Tent Camping 2 Person" />
+            </div>
+            <div class="tienda_card_info">
+              <h3 class="tienda_card_titulo">La Campana Tent Camping 2 Person</h3>
+              <p class="tienda_card_texto">Carpa premium para dos personas con todas las comodidades incluidas.</p>
+              <a href="detalle.html" class="tienda_card_cta tienda_cta_estadia">Ver detalles</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="index.html">
+      <img src="img/logo-footer.svg" alt="Logo Coachella" class="logo_footer">
+    </a>
+    <div class="footer_redes">
+      <a href="https://x.com/coachella">
+        <img src="img/icono-x.svg" alt="X">
+      </a>
+      <a href="https://www.instagram.com/coachella/">
+        <img src="img/icono-instagram.svg" alt="Instagram">
+      </a>
+    </div>
+    <p class="footer_copy">
+      © 2026 Coachella Valley Music and Arts Festival. Todos los derechos reservados.
+    </p>
+  </footer>
+
+</body>
+</html>
